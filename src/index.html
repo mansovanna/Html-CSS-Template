@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS ADMIN</title>
+    <link rel="stylesheet" href="./css/app.css" />
+  </head>
+  <body>
+    <!-- Block Side-bar -->
+    <nav id="nave-bar" class="side-bar">
+      <!-- Block Logo -->
+      <div class="block-logo">
+        <img src="../img/MoEYS_LOGO.png" alt="" />
+        <!-- Block Name Logo -->
+        <h4>ប្រព័ន្ធព័ត៌មានគ្រប់គ្រងអប់រំ</h4>
+        <!-- End Block Name Logo -->
+      </div>
+      <!-- Block Logo -->
+
+      <!-- Block Menu of App -->
+      <ul class="main-item-menu">
+        <!-- items menu 1 -->
+        <li class="nav-link-items">
+          <a href="#" class="nav-link">
+            <!-- Icon -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M9.06165 4.82633L3.23911 9.92134C2.7398 10.3583 3.07458 11.1343 3.76238 11.1343C4.18259 11.1343 4.52324 11.4489 4.52324 11.8371V15.0806C4.52324 17.871 4.52324 19.2662 5.46176 20.1331C6.40029 21 7.91082 21 10.9319 21H13.0681C16.0892 21 17.5997 21 18.5382 20.1331C19.4768 19.2662 19.4768 17.871 19.4768 15.0806V11.8371C19.4768 11.4489 19.8174 11.1343 20.2376 11.1343C20.9254 11.1343 21.2602 10.3583 20.7609 9.92134L14.9383 4.82633C13.5469 3.60878 12.8512 3 12 3C11.1488 3 10.4531 3.60878 9.06165 4.82633Z"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M12 16H12.009"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <!-- End Icon -->
+
+            <!-- Name Item menu -->
+            <p>ទំព័រដើម</p>
+            <!-- End Name Item menu -->
+          </a>
+        </li>
+        <!-- End items menu 1 -->
+
+        <!-- items menu 2 -->
+        <li class="nav-link-items">
+          <a href="#" class="nav-link">
+            <!-- Icon -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M14.5 9C14.5 10.3807 13.3807 11.5 12 11.5C10.6193 11.5 9.5 10.3807 9.5 9C9.5 7.61929 10.6193 6.5 12 6.5C13.3807 6.5 14.5 7.61929 14.5 9Z"
+                stroke="currentColor"
+                stroke-width="1.5"
+              />
+              <path
+                d="M13.2574 17.4936C12.9201 17.8184 12.4693 18 12.0002 18C11.531 18 11.0802 17.8184 10.7429 17.4936C7.6543 14.5008 3.51519 11.1575 5.53371 6.30373C6.6251 3.67932 9.24494 2 12.0002 2C14.7554 2 17.3752 3.67933 18.4666 6.30373C20.4826 11.1514 16.3536 14.5111 13.2574 17.4936Z"
+                stroke="currentColor"
+                stroke-width="1.5"
+              />
+              <path
+                d="M18 20C18 21.1046 15.3137 22 12 22C8.68629 22 6 21.1046 6 20"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+            </svg>
+            <!-- End Icon -->
+
+            <!-- Name Item menu -->
+            <p>ផែនទីសាលារៀន</p>
+            <!-- End Name Item menu -->
+          </a>
+        </li>
+        <!-- End items menu 2 -->
+
+        <!-- items menu 3 -->
+        <li class="nav-link-items">
+          <a href="#" class="nav-link" id="active">
+            <!-- Icon -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M2 12C2 7.75736 2 5.63604 3.46447 4.31802C4.92893 3 7.28596 3 12 3C16.714 3 19.0711 3 20.5355 4.31802C22 5.63604 22 7.75736 22 12C22 16.2426 22 18.364 20.5355 19.682C19.0711 21 16.714 21 12 21C7.28596 21 4.92893 21 3.46447 19.682C2 18.364 2 16.2426 2 12Z"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M5 16.5C6.20831 13.9189 10.7122 13.7491 12 16.5M10.5 9.5C10.5 10.6046 9.60457 11.5 8.5 11.5C7.39543 11.5 6.5 10.6046 6.5 9.5C6.5 8.39543 7.39543 7.5 8.5 7.5C9.60457 7.5 10.5 8.39543 10.5 9.5Z"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <path
+                d="M15 10H19"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M15 14H19"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <!-- End Icon -->
+
+            <!-- Name Item menu -->
+            <p>ប័ណ្ណព័ត៌មានសាលារៀន</p>
+            <!-- End Name Item menu -->
+          </a>
+        </li>
+        <!-- End items menu 3 -->
+
+        <!-- items menu 4 -->
+        <li class="nav-link-items">
+          <a href="#" class="nav-link">
+            <!-- Icon -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M3.5 13.678C3.5 9.49387 7.08079 5.35907 9.59413 2.97222C10.9591 1.67593 13.0409 1.67593 14.4059 2.97222C16.9192 5.35907 20.5 9.49387 20.5 13.678C20.5 17.7804 17.2812 22 12 22C6.71878 22 3.5 17.7804 3.5 13.678Z"
+                stroke="currentColor"
+                stroke-width="1.5"
+              />
+              <path
+                d="M16 14C16 16.2091 14.2091 18 12 18"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <!-- End Icon -->
+
+            <!-- Name Item menu -->
+            <p>ទឹកស្អាត និងអនាម័យ</p>
+            <!-- End Name Item menu -->
+          </a>
+        </li>
+        <!-- End items menu 4 -->
+
+        <!-- items menu 4 -->
+        <li class="nav-link-items">
+          <a href="#" class="nav-link">
+            <!-- Icon -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M21 21H10C6.70017 21 5.05025 21 4.02513 19.9749C3 18.9497 3 17.2998 3 14V3"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <path
+                d="M6 12H6.00898M8.9982 12H9.00718M11.9964 12H12.0054M14.9946 12H15.0036M17.9928 12H18.0018M20.991 12H21"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M6 7C6.67348 5.87847 7.58712 5 8.99282 5C14.9359 5 11.5954 17 17.9819 17C19.3976 17 20.3057 16.1157 21 15"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+            </svg>
+            <!-- End Icon -->
+
+            <!-- Name Item menu -->
+            <p>ស្ថិតិ និងសូចនាករ</p>
+            <!-- End Name Item menu -->
+          </a>
+        </li>
+        <!-- End items menu 4 -->
+      </ul>
+      <!-- Block Menu of App -->
+    </nav>
+    <!-- End Block Side-bar -->
+
+    <!-- Block Main Content -->
+    <main class="main">
+      <!-- Block Header -->
+      <nav class="header">
+        <!-- Block Icon Menu -->
+        <button id="activeMneu" class="btn btn-menu">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M20 12L10 12"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M20 5L4 5"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M20 19L4 19"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+        <!-- End Block Icon Menu -->
+
+        <!-- Block Language -->
+        <div class="language">
+          <!-- Block Language English -->
+          <button class="btn">
+            <!-- Flage -->
+            <img
+              src="../img//360_F_80931362_hc7MvkgkjTUjOlnCXJjOASENuaYTNoxv.jpg"
+              alt=""
+            />
+            <!-- End Flage -->
+
+            <!-- Block Name -->
+            <p id="eng">ENG</p>
+            <!-- End Block Name -->
+          </button>
+          <!-- End Block Language English -->
+
+          <!-- Block Language English -->
+          <button class="btn">
+            <img src="../img/Flag_of_Cambodia_(3-2).svg.png" alt="" />
+
+            <!-- Block Name -->
+            <p>ខ្មែរ</p>
+            <!-- End Block Name -->
+          </button>
+          <!-- End Block Language English -->
+        </div>
+        <!-- End Block Language -->
+      </nav>
+      <!-- End Block Header -->
+
+      <!-- Block Fillter or Find  -->
+      <div class="fillter-items-main">
+        <div class="fillter-items-main-header">
+          <!-- Block Name and Icon -->
+          <div class="fillter-header-child">
+            <!-- Icon -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M3 11C3 7.25027 3 5.3754 3.95491 4.06107C4.26331 3.6366 4.6366 3.26331 5.06107 2.95491C6.3754 2 8.25027 2 12 2C15.7497 2 17.6246 2 18.9389 2.95491C19.3634 3.26331 19.7367 3.6366 20.0451 4.06107C21 5.3754 21 7.25027 21 11V13C21 16.7497 21 18.6246 20.0451 19.9389C19.7367 20.3634 19.3634 20.7367 18.9389 21.0451C17.6246 22 15.7497 22 12 22C8.25027 22 6.3754 22 5.06107 21.0451C4.6366 20.7367 4.26331 20.3634 3.95491 19.9389C3 18.6246 3 16.7497 3 13V11Z"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M15 9.5L7 9.5M10 14.5H7"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <!-- End Icon -->
+
+            <!-- Name -->
+            <h3>ប័ណ្ណព័ត៌មានសាលារៀន</h3>
+            <!-- End Name -->
+          </div>
+          <!-- End Block Name and Icon -->
+
+          <!-- Block Select option  -->
+          <div class="selection-options">
+            <label for="date" class="selection-text"
+              >សូមជ្រើសរើសឆ្នាំសិក្សា</label
+            >
+            <select class="select-value" name="date" id="">
+              <option value="2023-2024">2023-2024</option>
+              <option value="2023-2023">2023-2023</option>
+            </select>
+            <svg
+              class="select-icons"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <!-- Icon of App -->
+          </div>
+          <!-- End Block Select option  -->
+        </div>
+
+        <div class="nav-vigate">
+          <!-- Block Navigate... Page -->
+          <ul class="nav-menu">
+            <li class="nav-item add-active-nav">
+              <button class="nav-button">ស្វែងរកតាមលេខកូតសាលា</button>
+              <div class="active-nav"></div>
+            </li>
+            <li class="nav-item">
+              <button class="nav-button">ស្វែងរកតាមឈ្មោះសាលា</button>
+              <div class="active-nav"></div>
+            </li>
+            <li class="nav-item">
+              <button class="nav-button">ស្វែងរកតាមតំបន់</button>
+              <div class="active-nav"></div>
+            </li>
+          </ul>
+          <!-- End Block Navigate... Page -->
+
+          <!-- Page Nav 1 -->
+          <div class="page-nav page-nav-1 active">
+            <form>
+              <input
+                type="text"
+                placeholder="លេខកូតសាលា"
+                class="search-navigate-page"
+                name="searchquery"
+              />
+
+              <!-- button -->
+              <div class="page-button">
+                <button class="btn btn-as btn-submit">
+                  <!-- Icon -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                    color="#000000"
+                    fill="none"
+                  >
+                    <path
+                      d="M17.5 17.5L22 22"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20C15.9706 20 20 15.9706 20 11Z"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <!-- End Icon -->
+                  <p>ស្វែងរក</p>
+                </button>
+
+                <!--  -->
+                <a class="btn btn-as btn-delete">
+                  <!-- Icon -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 9.75 14.25 12m0 0 2.25 2.25M14.25 12l2.25-2.25M14.25 12 12 14.25m-2.58 4.92-6.374-6.375a1.125 1.125 0 0 1 0-1.59L9.42 4.83c.21-.211.497-.33.795-.33H19.5a2.25 2.25 0 0 1 2.25 2.25v10.5a2.25 2.25 0 0 1-2.25 2.25h-9.284c-.298 0-.585-.119-.795-.33Z"
+                    />
+                  </svg>
+
+                  <!-- End Icon -->
+                  <p>លុបវិញ</p>
+                </a>
+              </div>
+            </form>
+          </div>
+          <!-- End Page Nav 1 -->
+
+          <!-- Page Nav 2 -->
+          <div class="page-nav page-nav-2 hidden">
+            <form>
+              <input
+                type="text"
+                placeholder="ឈ្មោះសាលា"
+                class="search-navigate-page"
+                name="searchquery"
+              />
+
+              <!-- button -->
+              <div class="page-button">
+                <button class="btn btn-as btn-submit">
+                  <!-- Icon -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                    color="#000000"
+                    fill="none"
+                  >
+                    <path
+                      d="M17.5 17.5L22 22"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20C15.9706 20 20 15.9706 20 11Z"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <!-- End Icon -->
+                  <p>ស្វែងរក</p>
+                </button>
+
+                <!--  -->
+                <a class="btn btn-as btn-delete">
+                  <!-- Icon -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 9.75 14.25 12m0 0 2.25 2.25M14.25 12l2.25-2.25M14.25 12 12 14.25m-2.58 4.92-6.374-6.375a1.125 1.125 0 0 1 0-1.59L9.42 4.83c.21-.211.497-.33.795-.33H19.5a2.25 2.25 0 0 1 2.25 2.25v10.5a2.25 2.25 0 0 1-2.25 2.25h-9.284c-.298 0-.585-.119-.795-.33Z"
+                    />
+                  </svg>
+
+                  <!-- End Icon -->
+                  <p>លុបវិញ</p>
+                </a>
+              </div>
+            </form>
+          </div>
+          <!-- End Page Nav 2 -->
+
+          <!-- Page Nav 3 -->
+          <div class="page-nav page-nav-3 hidden">
+            <form>
+              <input
+                type="text"
+                placeholder="តាមតំបន់"
+                class="search-navigate-page"
+                name="searchquery"
+              />
+
+              <!-- button -->
+              <div class="page-button">
+                <button class="btn btn-as btn-submit">
+                  <!-- Icon -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                    color="#000000"
+                    fill="none"
+                  >
+                    <path
+                      d="M17.5 17.5L22 22"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20C15.9706 20 20 15.9706 20 11Z"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <!-- End Icon -->
+                  <p>ស្វែងរក</p>
+                </button>
+
+                <!--  -->
+                <a class="btn btn-as btn-delete">
+                  <!-- Icon -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 9.75 14.25 12m0 0 2.25 2.25M14.25 12l2.25-2.25M14.25 12 12 14.25m-2.58 4.92-6.374-6.375a1.125 1.125 0 0 1 0-1.59L9.42 4.83c.21-.211.497-.33.795-.33H19.5a2.25 2.25 0 0 1 2.25 2.25v10.5a2.25 2.25 0 0 1-2.25 2.25h-9.284c-.298 0-.585-.119-.795-.33Z"
+                    />
+                  </svg>
+
+                  <!-- End Icon -->
+                  <p>លុបវិញ</p>
+                </a>
+              </div>
+            </form>
+          </div>
+          <!-- End Page Nav 3 -->
+        </div>
+      </div>
+      <!-- End Block Fillter or Find  -->
+
+      <!-- Block of Table  -->
+      <div class="content">
+        <!-- header -->
+        <div class="content-table-header">
+          <!-- Block Name  -->
+          <div class="content-side-header">
+            <!-- Icon -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418"
+              />
+            </svg>
+
+            <!-- End Icon -->
+
+            <h3>លទ្ធផលការស្វែងរក(2)</h3>
+          </div>
+          <!-- End Block Name -->
+
+          <!-- Block Search -->
+          <div class="content-search">
+            <!-- Block Search -->
+            <form>
+              <input
+                type="text"
+                placeholder="ស្វែងរកតាមឈ្មោះសាលា"
+                name="search"
+              />
+
+              <!-- Icon -->
+              <button>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M17.5 17.5L22 22"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20C15.9706 20 20 15.9706 20 11Z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <!-- End Icon -->
+            </form>
+            <!-- End Block Search -->
+          </div>
+          <!-- End Block Search -->
+        </div>
+        <!-- End header -->
+
+        <div class="main-table">
+          <!-- Block Table -->
+        <table class="table-style">
+          <thead>
+            <tr>
+              <th>ល.រ</th>
+              <th>School Name</th>
+              <th>ឈ្មោះសាលា</th>
+              <th>ប្រភេទ</th>
+              <th>ខណ្ឌ/ស្រុក</th>
+              <th>ខេត្ត/ក្រុង</th>
+              <th>ប័ណ្ណព័ត៌មានសាលារៀន</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>EK Phnom</td>
+              <td>ឯកភ្នំ</td>
+              <td>វិទ្យាល័យ ៧ ទៅ ១២</td>
+              <td>ឯកភ្នំ</td>
+              <td>បាត់ដំបង</td>
+              <td>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  color="#000000"
+                  fill="none"
+                >
+                  <path
+                    d="M3 11C3 7.25027 3 5.3754 3.95491 4.06107C4.26331 3.6366 4.6366 3.26331 5.06107 2.95491C6.3754 2 8.25027 2 12 2C15.7497 2 17.6246 2 18.9389 2.95491C19.3634 3.26331 19.7367 3.6366 20.0451 4.06107C21 5.3754 21 7.25027 21 11V13C21 16.7497 21 18.6246 20.0451 19.9389C19.7367 20.3634 19.3634 20.7367 18.9389 21.0451C17.6246 22 15.7497 22 12 22C8.25027 22 6.3754 22 5.06107 21.0451C4.6366 20.7367 4.26331 20.3634 3.95491 19.9389C3 18.6246 3 16.7497 3 13V11Z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M17 9.5L9 9.5M17 14.5H14"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>EK Phnom</td>
+              <td>ឯកភ្នំ</td>
+              <td>វិទ្យាល័យ ៧ ទៅ ១២</td>
+              <td>ឯកភ្នំ</td>
+              <td>បាត់ដំបង</td>
+              <td>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  color="#000000"
+                  fill="none"
+                >
+                  <path
+                    d="M3 11C3 7.25027 3 5.3754 3.95491 4.06107C4.26331 3.6366 4.6366 3.26331 5.06107 2.95491C6.3754 2 8.25027 2 12 2C15.7497 2 17.6246 2 18.9389 2.95491C19.3634 3.26331 19.7367 3.6366 20.0451 4.06107C21 5.3754 21 7.25027 21 11V13C21 16.7497 21 18.6246 20.0451 19.9389C19.7367 20.3634 19.3634 20.7367 18.9389 21.0451C17.6246 22 15.7497 22 12 22C8.25027 22 6.3754 22 5.06107 21.0451C4.6366 20.7367 4.26331 20.3634 3.95491 19.9389C3 18.6246 3 16.7497 3 13V11Z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M17 9.5L9 9.5M17 14.5H14"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </td>
+            </tr>
+
+            <tr>
+              <td>3</td>
+              <td>EK Phnom</td>
+              <td>ឯកភ្នំ</td>
+              <td>វិទ្យាល័យ ៧ ទៅ ១២</td>
+              <td>ឯកភ្នំ</td>
+              <td>បាត់ដំបង</td>
+              <td>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  color="#000000"
+                  fill="none"
+                >
+                  <path
+                    d="M3 11C3 7.25027 3 5.3754 3.95491 4.06107C4.26331 3.6366 4.6366 3.26331 5.06107 2.95491C6.3754 2 8.25027 2 12 2C15.7497 2 17.6246 2 18.9389 2.95491C19.3634 3.26331 19.7367 3.6366 20.0451 4.06107C21 5.3754 21 7.25027 21 11V13C21 16.7497 21 18.6246 20.0451 19.9389C19.7367 20.3634 19.3634 20.7367 18.9389 21.0451C17.6246 22 15.7497 22 12 22C8.25027 22 6.3754 22 5.06107 21.0451C4.6366 20.7367 4.26331 20.3634 3.95491 19.9389C3 18.6246 3 16.7497 3 13V11Z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M17 9.5L9 9.5M17 14.5H14"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </td>
+            </tr>
+
+            <tr>
+              <td>4</td>
+              <td>EK Phnom</td>
+              <td>ឯកភ្នំ</td>
+              <td>វិទ្យាល័យ ៧ ទៅ ១២</td>
+              <td>ឯកភ្នំ</td>
+              <td>បាត់ដំបង</td>
+              <td>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  color="#000000"
+                  fill="none"
+                >
+                  <path
+                    d="M3 11C3 7.25027 3 5.3754 3.95491 4.06107C4.26331 3.6366 4.6366 3.26331 5.06107 2.95491C6.3754 2 8.25027 2 12 2C15.7497 2 17.6246 2 18.9389 2.95491C19.3634 3.26331 19.7367 3.6366 20.0451 4.06107C21 5.3754 21 7.25027 21 11V13C21 16.7497 21 18.6246 20.0451 19.9389C19.7367 20.3634 19.3634 20.7367 18.9389 21.0451C17.6246 22 15.7497 22 12 22C8.25027 22 6.3754 22 5.06107 21.0451C4.6366 20.7367 4.26331 20.3634 3.95491 19.9389C3 18.6246 3 16.7497 3 13V11Z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M17 9.5L9 9.5M17 14.5H14"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- End Block Table -->
+        </div>
+
+       
+      <!-- End Block of Table  -->
+
+      </div>
+
+      <!-- spacer -->
+      <div class="spacer-20"></div>
+    </main>
+    <!-- End Block Main Content -->
+
+    <script src="../src/js/app.js"></script>
+    <script src="../src/js/main.js"></script>
+  </body>
+</html>
