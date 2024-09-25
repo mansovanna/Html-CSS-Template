@@ -3,7 +3,6 @@ import data from "./datas.js"; // Adjust the path as necessary
 
 function lang(language) {
     const selectedLangData = data[language];
-
     // Check if language data exists
     if (!selectedLangData) {
         console.error(`Language data for "${language}" not found.`);
@@ -53,6 +52,27 @@ function lang(language) {
         }
     });
 
+
+    // Update buttons in block 1
+    const submitButtons = document.getElementsByClassName('submit-lang');
+    Array.from(submitButtons).forEach((submitButton) => {
+        if (submitButton) {
+            submitButton.innerText = selectedLangData.block1.buttons.submit;
+            
+        }
+    });
+
+    // delete-lang
+
+    // Update buttons in block 1
+    const deleteButtons = document.getElementsByClassName('delete-lang');
+    Array.from(deleteButtons).forEach((deleteButton) => {
+        if (deleteButton) {
+            deleteButton.innerText = selectedLangData.block1.buttons.delete;
+            
+        }
+    });
+
     // Update block 2
     const block2Header = document.getElementById("block2-header");
     const block2Placeholder = document.getElementById("block2-placeholder");
@@ -71,6 +91,8 @@ function lang(language) {
             headerElement.innerText = selectedLangData.block2.table[tab];
         }
     });
+
+
 
     // Update active button
     active(language);

@@ -1,4 +1,3 @@
-// datas.js
 const data = {
     khmer: {
         logo: "ប្រព័ន្ធព័ត៌មានគ្រប់គ្រប់គ្រងអប់រំ",
@@ -22,6 +21,10 @@ const data = {
                 placeholder2: "ឈ្មោះសាលា",
                 placeholder3: 'តាមតំបន់',
             },
+            buttons: {
+                submit: "ស្វែងរក",  // Corrected key from 'submite' to 'submit'
+                delete: "លុបវិញ", 
+            }
         },
         block2: {
             header2: 'លទ្ធផលការស្វែងរក(2)',
@@ -57,6 +60,10 @@ const data = {
                 placeholder2: "School Name",
                 placeholder3: 'By Region',
             },
+            buttons: {
+                submit: "Search",
+                delete: "Delete",
+            }
         },
         block2: {
             header2: 'Search Results (2)',

@@ -126,6 +126,8 @@ body {
   color: var(--info-color);
   cursor: pointer;
   opacity: 0;
+  padding: 5px;
+  border-radius: 10px;
 }
 .main > .header > .language {
   display: flex;
@@ -378,6 +380,7 @@ body {
   cursor: pointer;
   /* background-color: transparent; */
   font-family: "Battambang", system-ui;
+  font-size: 14px;
 }
 .page-button > .btn-as > svg {
   width: 14px;
@@ -401,7 +404,7 @@ body {
 
 .btn-delete > p {
   color: white;
-  font-size: 14px;
+
 }
 
 /* Block Table */
