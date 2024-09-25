@@ -1,3 +1,4 @@
+
 const buttonMenu = document.getElementById('activeMneu');
 const sideBar = document.getElementById('nave-bar');
 

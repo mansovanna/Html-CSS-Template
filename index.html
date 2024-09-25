@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS ADMIN</title>
     <link rel="stylesheet" href="./src/css/app.css" />
+    <!-- <script src="./src/js/language.js"></script> -->
   </head>
   <body>
     <!-- Block Side-bar -->
@@ -13,7 +14,7 @@
       <div class="block-logo">
         <img src="./img/MoEYS_LOGO.png" alt="" />
         <!-- Block Name Logo -->
-        <h4>ប្រព័ន្ធព័ត៌មានគ្រប់គ្រងអប់រំ</h4>
+        <h4 id="logo">ប្រព័ន្ធព័ត៌មានគ្រប់គ្រងអប់រំ</h4>
         <!-- End Block Name Logo -->
       </div>
       <!-- Block Logo -->
@@ -47,7 +48,7 @@
             <!-- End Icon -->
 
             <!-- Name Item menu -->
-            <p>ទំព័រដើម</p>
+            <p id="menu1" class="font-menu">ទំព័រដើម</p>
             <!-- End Name Item menu -->
           </a>
         </li>
@@ -82,7 +83,7 @@
             <!-- End Icon -->
 
             <!-- Name Item menu -->
-            <p>ផែនទីសាលារៀន</p>
+            <p id="menu2" class="font-menu">ផែនទីសាលារៀន</p>
             <!-- End Name Item menu -->
           </a>
         </li>
@@ -128,7 +129,7 @@
             <!-- End Icon -->
 
             <!-- Name Item menu -->
-            <p>ប័ណ្ណព័ត៌មានសាលារៀន</p>
+            <p id="menu3" class="font-menu">ប័ណ្ណព័ត៌មានសាលារៀន</p>
             <!-- End Name Item menu -->
           </a>
         </li>
@@ -159,7 +160,7 @@
             <!-- End Icon -->
 
             <!-- Name Item menu -->
-            <p>ទឹកស្អាត និងអនាម័យ</p>
+            <p id="menu4" class="font-menu">ទឹកស្អាត និងអនាម័យ</p>
             <!-- End Name Item menu -->
           </a>
         </li>
@@ -197,7 +198,7 @@
             <!-- End Icon -->
 
             <!-- Name Item menu -->
-            <p>ស្ថិតិ និងសូចនាករ</p>
+            <p id="menu5" class="font-menu">ស្ថិតិ និងសូចនាករ</p>
             <!-- End Name Item menu -->
           </a>
         </li>
@@ -246,7 +247,7 @@
         <!-- Block Language -->
         <div class="language">
           <!-- Block Language English -->
-          <button class="btn">
+          <button id="english-btn"  class="btn">
             <!-- Flage -->
             <img
               src="./img/360_F_80931362_hc7MvkgkjTUjOlnCXJjOASENuaYTNoxv.jpg"
@@ -260,22 +261,22 @@
           </button>
           <!-- End Block Language English -->
 
-          <!-- Block Language English -->
-          <button class="btn">
+          <!-- Block Language Khmer -->
+          <button id="khmer-btn" class="btn lang-active">
             <img src="./img/Flag_of_Cambodia_(3-2).svg.png" alt="" />
 
             <!-- Block Name -->
             <p>ខ្មែរ</p>
             <!-- End Block Name -->
           </button>
-          <!-- End Block Language English -->
+          <!-- End Block Language Khmer -->
         </div>
         <!-- End Block Language -->
       </nav>
       <!-- End Block Header -->
 
       <!-- Block Fillter or Find  -->
-      <div class="fillter-items-main">
+      <div id="block1" class="fillter-items-main">
         <div class="fillter-items-main-header">
           <!-- Block Name and Icon -->
           <div class="fillter-header-child">
@@ -303,14 +304,14 @@
             <!-- End Icon -->
 
             <!-- Name -->
-            <h3>ប័ណ្ណព័ត៌មានសាលារៀន</h3>
+            <h3 id="block1-header">ប័ណ្ណព័ត៌មានសាលារៀន</h3>
             <!-- End Name -->
           </div>
           <!-- End Block Name and Icon -->
 
           <!-- Block Select option  -->
           <div class="selection-options">
-            <label for="date" class="selection-text"
+            <label id="block1-selection" for="date" class="selection-text"
               >សូមជ្រើសរើសឆ្នាំសិក្សា</label
             >
             <select class="select-value" name="date" id="">
@@ -339,15 +340,15 @@
           <!-- Block Navigate... Page -->
           <ul class="nav-menu">
             <li class="nav-item add-active-nav">
-              <button class="nav-button">ស្វែងរកតាមលេខកូតសាលា</button>
+              <button class="nav-button" id="block1-page1">ស្វែងរកតាមលេខកូតសាលា</button>
               <div class="active-nav"></div>
             </li>
             <li class="nav-item">
-              <button class="nav-button">ស្វែងរកតាមឈ្មោះសាលា</button>
+              <button class="nav-button" id="block1-page2">ស្វែងរកតាមឈ្មោះសាលា</button>
               <div class="active-nav"></div>
             </li>
             <li class="nav-item">
-              <button class="nav-button">ស្វែងរកតាមតំបន់</button>
+              <button class="nav-button" id="block1-page3">ស្វែងរកតាមតំបន់</button>
               <div class="active-nav"></div>
             </li>
           </ul>
@@ -356,8 +357,8 @@
           <!-- Page Nav 1 -->
           <div class="page-nav page-nav-1 active">
             <form>
-              <input
-                type="text"
+              <input 
+                type="text" id="input-placeholder1"
                 placeholder="លេខកូតសាលា"
                 class="search-navigate-page"
                 name="searchquery"
@@ -423,7 +424,7 @@
             <form>
               <input
                 type="text"
-                placeholder="ឈ្មោះសាលា"
+                placeholder="ឈ្មោះសាលា" id="input-placeholder2"
                 class="search-navigate-page"
                 name="searchquery"
               />
@@ -487,7 +488,7 @@
           <div class="page-nav page-nav-3 hidden">
             <form>
               <input
-                type="text"
+                type="text" id="input-placeholder3"
                 placeholder="តាមតំបន់"
                 class="search-navigate-page"
                 name="searchquery"
@@ -552,7 +553,7 @@
       <!-- End Block Fillter or Find  -->
 
       <!-- Block of Table  -->
-      <div class="content">
+      <div id="block2" class="content">
         <!-- header -->
         <div class="content-table-header">
           <!-- Block Name  -->
@@ -574,7 +575,7 @@
 
             <!-- End Icon -->
 
-            <h3>លទ្ធផលការស្វែងរក(2)</h3>
+            <h3   id="block2-header">លទ្ធផលការស្វែងរក(2)</h3>
           </div>
           <!-- End Block Name -->
 
@@ -582,7 +583,7 @@
           <div class="content-search">
             <!-- Block Search -->
             <form>
-              <input
+              <input id="block2-placeholder"
                 type="text"
                 placeholder="ស្វែងរកតាមឈ្មោះសាលា"
                 name="search"
@@ -623,13 +624,13 @@
         <table class="table-style">
           <thead>
             <tr>
-              <th>ល.រ</th>
+              <th id="table-tab1">ល.រ</th> 
               <th>School Name</th>
               <th>ឈ្មោះសាលា</th>
-              <th>ប្រភេទ</th>
-              <th>ខណ្ឌ/ស្រុក</th>
-              <th>ខេត្ត/ក្រុង</th>
-              <th>ប័ណ្ណព័ត៌មានសាលារៀន</th>
+              <th id="table-tab2">ប្រភេទ</th> 
+              <th id="table-tab3">ខណ្ឌ/ស្រុក</th>
+              <th id="table-tab4">ខេត្ត/ក្រុង</th>
+              <th id="table-tab5">ប័ណ្ណព័ត៌មានសាលារៀន</th>
             </tr>
           </thead>
           <tbody>
@@ -784,5 +785,7 @@
 
     <script src="./src/js/app.js"></script>
     <script src="./src/js/main.js"></script>
+    <script type="module" src="./src/js/language.js"></script>
+
   </body>
 </html>

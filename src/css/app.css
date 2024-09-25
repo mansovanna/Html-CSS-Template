@@ -28,7 +28,7 @@ body {
 }
 
 .side-bar {
-  width: 6.5cm;
+  width: 6.8cm;
   height: 100vh;
   background-color: var(--primary-color);
   position: fixed;
@@ -81,7 +81,12 @@ body {
   color: var(--warning-color);
 }
 .main-item-menu > .nav-link-items > .nav-link > p {
-  font-size: 17px;
+  max-height: 1.2em; 
+  line-height: 1.2;
+  overflow: hidden;
+  white-space: nowrap; 
+  text-overflow: ellipsis;
+  font-size: 16px;
   text-align: start;
   color: white;
 }
@@ -100,7 +105,7 @@ body {
 
 /* Block Main Conten */
 .main {
-  width: calc(100% - 6.5cm);
+  width: calc(100% - 6.8cm);
   height: auto;
   padding: 0px 0.6rem;
   display: flex;
@@ -155,6 +160,10 @@ body {
 }
 #eng {
   font-size: 12px;
+}
+.lang-ative{
+  background: #5499c7;
+  color: white;
 }
 /* End Block Main Content */
 
@@ -476,7 +485,7 @@ body {
 .main-table > .table-style th {
   background-color: #f4f4f4;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 12px;
   border-top: 1px solid #ddd;
 }
 .main-table > .table-style td {
